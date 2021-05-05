@@ -20,7 +20,7 @@ The user defined string argument represents the path of the directory, where the
 `python make_inp.py "train"`\
 `python make_inp.py "test"`
 
-*Note: For the sake of convenience, all the processing steps must be carried out separately for training and test set molecules.*
+*Note: For the sake of convenience, all the processing steps need to be carried out separately for training and test set molecules.*
 
 ### Model Training
 Train the model using the following command.\
