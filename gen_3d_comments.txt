@@ -1,7 +1,0 @@
-5
-1
-6
-0.0,0.0,0.0 # origin of the cubic box
-14,14,14 # grid length of the cubic box
-9.82658,9.82658,9.82658 # dimensions of the cubic box in Bohrs
-3
