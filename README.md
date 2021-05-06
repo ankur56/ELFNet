@@ -35,6 +35,6 @@ Arguments:\
            `3`: Electrostatic Potential (ESP)\
 `grid_length`: Voxel grid length of the cubic volume\
 `dense1`: Depth of the first dense block\
-`dense2`: Depth of the second dense block\
+`dense2`: Depth of the second dense block
 
 ### References
