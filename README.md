@@ -25,6 +25,7 @@ The user defined string argument represents the path of the directory, where the
 ### Model Training
 Train the model using the following command.\
 `python train_pl.py --data_path "/datasets_directory_path/" --channel 2 --grid_length 14 --batch_size 32 --epochs 250 --dense1 16 --dense2 16 > results.txt 2> errors.txt`\
+\
 Arguments:\
 `data_path`: path of the directory where input and output data are stored\
 `channel`: one of `0`, `1`, `2`, or `3`\
@@ -32,8 +33,8 @@ Arguments:\
            `1`: Electron Localization Function (ELF)\
            `2`: Localized Orbital Locator (LOL)\
            `3`: Electrostatic Potential (ESP)\
-`grid_length`: Voxel grid length of the cubic volume
-`dense1`: Depth of the first dense block
-`dense2`: Depth of the second dense block
+`grid_length`: Voxel grid length of the cubic volume\
+`dense1`: Depth of the first dense block\
+`dense2`: Depth of the second dense block\
 
 ### References
