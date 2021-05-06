@@ -18,7 +18,8 @@ The user defined string argument represents the path of the directory, where the
 `./calc_3dprop.sh`
 4. Prepare training and test datasets.\
 `python make_inp.py "train"`\
-`python make_inp.py "test"`
+`python make_inp.py "test"`\
+5. Place the training and test datasets generated in step-4 in a directory of your choice. Also, place the target labels (g4mp2_b3lyp_diff_labels.pickle) provided in the data folder in the same directory.
 
 *Note: For the sake of convenience, all the processing steps need to be carried out separately for training and test set molecules.*
 
