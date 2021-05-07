@@ -10,16 +10,17 @@
 ### Data
 The QM9-G4MP2 dataset is publicly available through [Materials Data Facility](https://petreldata.net/mdf/detail/wardlogan_machine_learning_calculations_v1.1/). The geometries (xyz files) and energies of the molecules were extracted from the dataset, which were then processed using the scripts in this repository. 
 ### Data Preparation
-1. Generate a unique molecular orientation and prepare a corresponding Gaussian input file.\
+1. Extract 'xyz' files of the molecules from the given link. Create two separate folders for training and test. Now, carry out the following steps inside the training and test set directories.\
+2. Generate a unique molecular orientation and prepare a corresponding Gaussian input file.\
 `python gen_unique_xyz.py "/wfx_file_directory_path/"`\
 The user defined string argument represents the path of the directory, where the *wfx* files would be stored.
-2. Run the input files generated in step 1 using Gaussian to obtain the *wfx* files.
-3. Generate requisite volumetric properties from *wfx* files using Multiwfn.\
+3. Run the input files generated in step-2 using Gaussian to obtain the *wfx* files.
+4. Generate requisite volumetric properties from *wfx* files using Multiwfn.\
 `./calc_3dprop.sh`
-4. Prepare training and test datasets.\
+5. Prepare training and test datasets using the property files generated in step-4.\
 `python make_inp.py "train"`\
 `python make_inp.py "test"`\
-5. Place the training and test datasets generated in step-4 in a directory of your choice. Also, place the target labels (g4mp2_b3lyp_diff_labels.pickle) provided in the data folder in the same directory.
+6. Place the training and test datasets generated in step-5 in a directory of your choice. Also, place the target labels (g4mp2_b3lyp_diff_labels.pickle) provided in the data folder in the same directory.
 
 *Note: For the sake of convenience, all the processing steps need to be carried out separately for training and test set molecules.*
 
