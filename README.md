@@ -10,7 +10,7 @@
 ### Data
 The QM9-G4MP2 dataset is publicly available through [Materials Data Facility](https://petreldata.net/mdf/detail/wardlogan_machine_learning_calculations_v1.1/). The geometries (xyz files) and energies of the molecules were extracted from the dataset, which were then processed using the scripts in this repository. 
 ### Data Preparation
-1. Extract 'xyz' files of the molecules from the given link. Create two separate folders for training and test. Now, carry out the following steps inside the training and test set directories.
+1. Extract 'xyz' files of the molecules from the QM9-G4MP2 dataset. Create two directories for training and test set. Move the training and test set coordinate files to their respective directories. Now, carry out the following steps inside the training and test set directories.
 2. Generate a unique molecular orientation and prepare a corresponding Gaussian input file.\
 `python gen_unique_xyz.py "/wfx_file_directory_path/"`\
 The user defined string argument represents the path of the directory, where the *wfx* files would be stored.
