@@ -39,6 +39,6 @@ Arguments:\
 `dense1`: Depth of the first dense block\
 `dense2`: Depth of the second dense block
 
-*Note: We recommend using GPUs for model training. Some of the arguments provided in the code assume usage of GPUs by default.*
+*Note: We recommend using GPUs for model training.*
 
 ### References
