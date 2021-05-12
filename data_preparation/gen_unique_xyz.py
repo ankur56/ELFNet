@@ -25,7 +25,7 @@ def xyz2pca(args):
         print("File ", filename, "not found!", flush=True)
         sys.exit()
 
-    file = os.path.splitext(filename)[0]
+    file0 = os.path.splitext(filename)[0]
 
     atomsymbol = []
     og_coord = []
@@ -55,12 +55,14 @@ def xyz2pca(args):
     ham_coord2 = ha_coord - ha_coord_m
 
     pca = decomposition.PCA(n_components=3)
-    pca.fit(ham_coord2)
-    # uncomment the following line and comment out the one above
+    regexp = re.compile(r'00000[1-8]')
     # for molecules with only one heavy atom
     # GDB_ID: 000001, 000002, 000003, 000004, 000005, 000006,
     #         000007, 000008
-    #pca.fit(ham_coord)
+    if regexp.search(file0):
+        pca.fit(ham_coord)
+    else:
+        pca.fit(ham_coord2)   
 
     pca_xyz = pca.transform(ham_coord)
     pca_xyz = np.array(pca_xyz)
@@ -80,7 +82,7 @@ def xyz2pca(args):
     at_pca_xyz = list(
         zip(atomsymbol, pca_xyz[:, 0], pca_xyz[:, 1], pca_xyz[:, 2]))
 
-    new_gjf_name = file + "_pca"
+    new_gjf_name = file0 + "_pca"
     new_input = open(new_gjf_name + ".gjf", 'w')
     new_input.write('%chk=' + new_gjf_name +
                     '.chk\n%mem=3GB\n%nprocshared=2\n')
