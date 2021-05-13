@@ -10,12 +10,12 @@ import multiprocessing as mp
 
 
 def proc_propfile(fname):
-    a = np.genfromtxt(fname, delimiter=",")
-    ind = np.lexsort((a[:, 0], a[:, 2]))
-    a = a[ind]
-    ed = a[:, 3]
-    ed = np.expand_dims(ed, axis=1)
-    return ed
+    data = np.genfromtxt(fname, delimiter=",")
+    ind = np.lexsort((data[:, 0], data[:, 2]))
+    data = data[ind]
+    prop = data[:, 3]
+    prop = np.expand_dims(prop, axis=1)
+    return prop
 
 
 def txt2dictionary(filename):
