@@ -7,6 +7,8 @@
 - [Multiwfn](http://sobereva.com/multiwfn/download.html)
 - Gaussian 16
 
+*Note: We recommend using Anaconda for easy installation of libraries.*
+
 ### Data
 The QM9-G4MP2 dataset is publicly available through [Materials Data Facility](https://petreldata.net/mdf/detail/wardlogan_machine_learning_calculations_v1.1/). The geometries (*xyz* files) and energies of the molecules were extracted from the dataset, which were then processed using the scripts in this repository. 
 ### Data Preparation
