@@ -15,7 +15,7 @@ The QM9-G4MP2 dataset is publicly available through [Materials Data Facility](ht
 1. Extract *xyz* files of the molecules from the QM9-G4MP2 dataset. Create two directories to store training and test set data. Move the training and test set coordinate files to their respective directories. Now, carry out the following steps inside the training and test set directories.
 2. Generate a unique molecular orientation and prepare a corresponding Gaussian input file.\
 `python gen_unique_xyz.py "/wfx_file_directory_path/"`\
-The user defined string argument represents the path of the directory, where the *wfx* files would be stored.
+The user defined string argument represents the path of the directory, where the *wfx* files would be stored. For the sake of convenience, keep the wfx directory path the same as in step-1 for all the training/test set molecules. 
 3. Run the input files generated in step-2 using Gaussian to obtain the *wfx* files.
 4. Generate requisite volumetric properties from *wfx* files using Multiwfn.\
 `./calc_3dprop.sh`
