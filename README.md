@@ -3,6 +3,7 @@
 ### Requirements
 - python 3.8
 - numpy
+- [scikit-learn](https://scikit-learn.org/stable/)
 - [PyTorch Lightning (>= 1.2.0rc0)](https://www.pytorchlightning.ai/)
 - [Multiwfn](http://sobereva.com/multiwfn/download.html)
 - Gaussian 16
