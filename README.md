@@ -45,3 +45,4 @@ Arguments:\
 *Note: We recommend using GPUs for model training.*
 
 ### References
+1. DenseNet model adapted from https://github.com/gpleiss/efficient_densenet_pytorch
