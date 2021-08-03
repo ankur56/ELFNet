@@ -44,7 +44,6 @@ def xyz2pca(args):
     og_coord = np.array(og_coord)
 
     ha_coord = []
-    ha_charge = []
     for id, at in enumerate(atomsymbol):
         if at != 'H':
             ha_coord.append(og_coord[id, :])
