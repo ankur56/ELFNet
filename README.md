@@ -3,8 +3,10 @@
 ### Requirements
 - python 3.8
 - numpy
+- [natsort](https://pypi.org/project/natsort/)
+- [torch-summary](https://pypi.org/project/torch-summary/)
 - [scikit-learn](https://scikit-learn.org/stable/)
-- [PyTorch Lightning (>= 1.2.0rc0)](https://www.pytorchlightning.ai/)
+- [PyTorch Lightning (version 1.2.0rc0)](https://www.pytorchlightning.ai/)
 - [Multiwfn](http://sobereva.com/multiwfn/download.html)
 - Gaussian 16
 
