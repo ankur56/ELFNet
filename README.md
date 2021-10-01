@@ -5,6 +5,7 @@
 - numpy
 - [natsort](https://pypi.org/project/natsort/)
 - [torch-summary](https://pypi.org/project/torch-summary/)
+- [pickle5](https://pypi.org/project/pickle5/)
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [PyTorch Lightning (version 1.2.0rc0)](https://www.pytorchlightning.ai/)
 - [Multiwfn](http://sobereva.com/multiwfn/download.html)
