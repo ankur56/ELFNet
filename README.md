@@ -1,4 +1,4 @@
-## 3D Dense Convolutional Neural Networks Utilizing Molecular Topological Features for Accurate Atomization Energy Predictions
+## 3D Convolutional Neural Networks Utilizing Molecular Topological Features for Accurate Atomization Energy Predictions
 
 ### Requirements
 - python 3.8
