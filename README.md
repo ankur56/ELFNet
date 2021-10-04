@@ -5,9 +5,8 @@
 - numpy
 - [natsort](https://pypi.org/project/natsort/)
 - [torch-summary](https://pypi.org/project/torch-summary/)
-- [pickle5](https://pypi.org/project/pickle5/)
 - [scikit-learn](https://scikit-learn.org/stable/)
-- [PyTorch Lightning (version 1.2.0rc0)](https://www.pytorchlightning.ai/)
+- [PyTorch Lightning (version 1.2.0rc0)](https://pypi.org/project/pytorch-lightning/1.2.0rc0/)
 - [Multiwfn](http://sobereva.com/multiwfn/download.html)
 - Gaussian 16
 
