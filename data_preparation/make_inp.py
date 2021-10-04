@@ -2,7 +2,7 @@
 
 import argparse
 import numpy as np
-import pickle5 as pickle
+import pickle
 import sys
 import os
 from natsort import natsorted
