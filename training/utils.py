@@ -4,7 +4,7 @@ from sklearn.preprocessing import MaxAbsScaler, StandardScaler
 from scipy import ndimage
 import numpy as np
 import sys
-import pickle5 as pickle
+import pickle
 
 
 def make_data(ch=2, path="/N/project/ankur_projects/", k=14):
