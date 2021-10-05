@@ -23,8 +23,8 @@ The user defined string argument represents the path of the directory, where the
 4. Generate requisite volumetric properties from *wfx* files using Multiwfn.\
 `./calc_3dprop.sh`
 5. Prepare training and test datasets using the property files generated in step-4.\
-`python make_inp.py "train"`\
-`python make_inp.py "test"`
+`python make_inp.py --data_split "train"`\
+`python make_inp.py --data_split "test"`
 6. Place the training and test datasets (*pickle* files) generated in step-5 in a directory of your choice. Also, place the target labels (*g4mp2_b3lyp_diff_labels.pickle*) provided in the *data* folder in the same directory.
 
 *Note: For the sake of convenience, all the processing steps need to be carried out separately for training and test set molecules.*
